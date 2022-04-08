@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Futura';
+  src: url(Font/Futura\ XBlk\ BT.ttf);
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body{
+  scroll-behavior: smooth;
+  font-size: 2rem;
+  background: linear-gradient( #29EE99, #1AAE6E);
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.tegels{
+  font-size: 2rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  font-family: sans-serif;
+
+}
+
+h2, h3,h4,h6,p{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Futura', sans-serif;
+  font-weight: 400;
+  text-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+h2{
+  font-size: 6rem;
+}
+h3{
+  font-size: 8rem;
+}
+.energie{
+  font-size: 5rem;
+}
+
+.cardenergie > img{
+  margin: 4rem;
+}
+
+article{
+  background: rgba(255, 255, 255, 0.428);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper{
+  padding: 6rem;
+  display: flex;
+  align-items: center;
+}
+.bar{
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Futura', sans-serif;
+  flex-direction:column;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  width: 100rem;
+  border: none;
+  outline: none;
+  border-radius: 5rem;
+}
+header{
+  display: flex;
+  height: 20rem;
+  padding: 2rem;
+  margin-right: 14.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  margin-top: 1rem;
+  width: 55rem;
+  height: 55rem;
+  border-radius: 5rem;
+  box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+  flex-shrink: 0;
+}
+
+.info-div{
+  display: flex;
+}
+
+.iconbar{
+
+}
+
+button {
+  cursor: pointer;
+}
+  
+  
+button,input {
+  border: none;
+
+  outline: none;
+  color: inherit;
+}
+ 
+img {
+  margin-left: 1rem;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ 
+ul {
+  list-style: none;
+}
+
+.heading, .submit, .textinput {
+  font-family: 'Futura', sans-serif;
+}
+
+.container{
+ 
+}
+
+.card h4{
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+img#icon{
+  display: flex;
+  width: 20%;
+}
+h6#weather{
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+h2#location{
+  text-transform: capitalize;
+}
+.diagram{
+  width:  1700px;
+ position: relative;
+ height: 160px;
+ top: 140px;
+ gap: 52000px;
+}
+
+.card .card--first{
+  display: flex;
+  position: relative;
+  height: -1400px;
+  top: 11px;
+  gap: 52000px;
+  left: 304px; 
+}
+.card .card--second{
+  display: flex;
+  position: relative;
+  height: -1400px;
+  top: -545px;
+  gap: 52000px;
+  left: 1425px;
+}
+
+#js--chart--1{
+  display: block;
+  box-sizing: border-box;
+  height: 439px;
+  width: 465.75px;
+  
+  
+
+  
+}
+.dataDiv{
+  font-size: 30px;
+  height: 30px;
+}

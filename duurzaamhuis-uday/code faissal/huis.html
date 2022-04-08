@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="data.js" defer></script>
+    <title>Durable Home Dashboard</title>
+
+</head>
+<body class ="header"> 
+    
+    <header>
+            <div class="logo">
+                <img src="LOGO.png" alt="" srcset="">
+            </div>
+            <div class="bar"><input class="bar" type="text" placeholder="ZOEK"></div>
+            <div class="iconbar"><img src="img/Group 16.png" alt=""></div>
+    </header>
+    
+    <div id="dataDiv"></div>
+
+    <div class="tegels">
+        <article class="card cardgasverbruik">
+            <h2>GASVERBRUIK</h2>
+            
+            <h3>€36,95</h3>
+        </article>
+
+        <article class="card huidige temp">
+            <h2>HUIDIGE TEMPERATUUR</h2>
+        <div>
+        <div class="info-div">
+            <img src="img/Group 22.png" alt="">
+            <h3>6℃</h3>
+        </div>
+        <div class="info-div">
+            <img src="img/Group 19.png" alt="">
+            <h3>20℃</h3>
+        </div>
+        </div>
+      
+        <main class="diagram">
+            <section class="section--first">
+                <article class="card card--first"> 
+                    <h2 id="date" id="time"></h2>
+                    <h2 id="time"></h2>
+                </article>
+                <article class="card card--second">
+                <canvas id="js--chart--1" width="621" height="621" style="display: block; box-sizing: border-box; height: 465.75px; width: 465.75px;"></canvas>
+                </article>
+             
+        </article>  
+        <article class="card">
+            <h2>WATERGEBRUIK</h2>
+            <p>PER MAAND</p>
+            <div>
+                <h3>€70,95</h3>
+            </div>
+        </article> 
+        <article class="card cardenergie">
+            <h2 class="energie">ENERGIEBVERBRUIK</h2>
+            <p>AFGELOPEN MAANDEN</p>
+            <img src="img/Bar.png" alt="">
+        </article> 
+        <article class="card weather">
+            <h2><i class="fa fa-map-marker"></i><span id="location"></span></h2>
+            <h6 id="weather"></h6>
+            <h4><span id='temp'></span>℃</h4>
+            <img src="" id="icon">
+        </article> 
+    </div> 
+    
+</body>
+
+
+<script type="text/javascript">
+    link = "https://api.openweathermap.org/data/2.5/weather?q=Amsterdam&appid=16058c3afd5d67a6ad4b902c4695735f" ; 
+    link = "https://api.openweathermap.org/data/2.5/weather?lat=52.370216&lon=4.895168&appid=16058c3afd5d67a6ad4b902c4695735f&units=metric&lang=nl";
+    var request = new XMLHttpRequest();
+    request.open('GET',link,true);
+    request.onload = function(){
+        var obj = JSON.parse(this.response);
+        console.log(obj);
+        document.getElementById('weather').innerHTML = obj.weather[0].description;
+        document.getElementById('location').innerHTML = obj.name;
+        document.getElementById('temp').innerHTML = obj.main.temp;
+        document.getElementById('icon').src = "http://openweathermap.org/img/wn/"+obj.weather[0].icon+".png";
+    }
+    if(request.status==200){
+        console.log("Error");
+    }
+    request.send();
+</script>
+</html>
