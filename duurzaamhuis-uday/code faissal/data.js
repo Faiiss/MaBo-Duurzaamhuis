@@ -128,7 +128,7 @@ const data = {
         {
             label: ["Energie Verbruik",],
             data: [4000, 5000 , 3000,],
-            backgroundColor: ['#29EE99','#1AAE6E','#45b3e7',],
+            backgroundColor: ['#29EE99','#ffd662','#45b3e7',],
         }
     ]
 }
