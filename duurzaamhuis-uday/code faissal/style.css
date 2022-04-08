@@ -18,7 +18,7 @@ body{
   font-size: 2rem;
   background: linear-gradient( #29EE99, #1AAE6E);
   align-items: center;
-  min-height: 100vh;
+  min-height: 200vh;
   flex-wrap: wrap;
 }
 
@@ -182,7 +182,7 @@ h2#location{
   left: 1425px;
 }
 
-#js--chart--1{
+.js--chart--1{
   display: block;
   box-sizing: border-box;
   height: 439px;

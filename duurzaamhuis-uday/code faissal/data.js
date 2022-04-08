@@ -126,7 +126,7 @@ const data = {
     labels: ['Gas','Elektra','Water'],
     datasets:[
         {
-            label: "Energie Verbruik",
+            label: ["Energie Verbruik",],
             data: [4000, 5000 , 3000,],
             backgroundColor: ['#29EE99','#1AAE6E','#45b3e7',],
         }
@@ -138,8 +138,7 @@ const config = {
   maintainAspectRatio: true,
 }
 
-
-new Chart(document.getElementById("js--chart--1"), config);
+new Chart(document.getElementsByClassName("js--chart--1"), config);
 
 
 

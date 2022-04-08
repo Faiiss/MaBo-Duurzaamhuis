@@ -14,7 +14,7 @@
     
     <header>
             <div class="logo">
-                <img src="LOGO.png" alt="" srcset="">
+                <img src="img/LOGO.png" alt="" srcset="">
             </div>
             <div class="bar"><input class="bar" type="text" placeholder="ZOEK"></div>
             <div class="iconbar"><img src="img/Group 16.png" alt=""></div>
@@ -40,18 +40,7 @@
             <img src="img/Group 19.png" alt="">
             <h3>20℃</h3>
         </div>
-        </div>
-      
-        <main class="diagram">
-            <section class="section--first">
-                <article class="card card--first"> 
-                    <h2 id="date" id="time"></h2>
-                    <h2 id="time"></h2>
-                </article>
-                <article class="card card--second">
-                <canvas id="js--chart--1" width="621" height="621" style="display: block; box-sizing: border-box; height: 465.75px; width: 465.75px;"></canvas>
-                </article>
-             
+        </div>             
         </article>  
         <article class="card">
             <h2>WATERGEBRUIK</h2>
@@ -63,7 +52,8 @@
         <article class="card cardenergie">
             <h2 class="energie">ENERGIEBVERBRUIK</h2>
             <p>AFGELOPEN MAANDEN</p>
-            <img src="img/Bar.png" alt="">
+            <canvas class="js--chart--1" width="1000" height="1">
+            </canvas>   
         </article> 
         <article class="card weather">
             <h2><i class="fa fa-map-marker"></i><span id="location"></span></h2>
@@ -71,6 +61,12 @@
             <h4><span id='temp'></span>℃</h4>
             <img src="" id="icon">
         </article> 
+        <article class="card card--first">
+            <h2 id="date">placeholder Date</h2>
+            <h2 id="time">placeholder Time</h2>
+        </article>
+        <main class="diagram">
+        <section class="section--first">
     </div> 
     
 </body>
