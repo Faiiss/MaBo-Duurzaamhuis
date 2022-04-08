@@ -82,3 +82,37 @@ form.addEventListener("submit", e => {
   form.reset();
   input.focus();
 });
+
+"use strict"
+const timeDelay = 250; // time delay refresh data
+let refreshTimer = window.setInterval(renderData, timeDelay); // timer data opvragen van server
+
+// jouw persoonlijke URL
+const mijnDataURL = "https://data.softwaredeveloper.amsterdam/api/device/98b08e4d/latest"; 
+
+const dataDiv = document.getElementById("dataDiv"); // hier komt de data
+
+async function getSensorData() {
+    let url = mijnDataURL;
+    try {
+        let response = await fetch(url);
+        return await response.json();
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function renderData() {
+        let measurementRaw = await getSensorData();
+        let measurement = measurementRaw.data[0];
+        console.log(measurement);
+
+         // Nieuwe Javascript date maken met de de datum en tijd van de meting
+         let datum =  new Date(measurement.datum);
+
+         // De meting gegevens wegschrijven naar de div
+         dataDiv.innerHTML = <h3>Datum: ${datum.toLocaleString()}</h3><p>Sensor: ${measurement.sensor} 
+            </p><p>Temperatuur: ${measurement.value1}
+            </p><p> Vochtigheid: ${measurement.value2}
+            </p><p> Lichtintesiteit: ${measurement.value3}</p>;
+    }
