@@ -126,7 +126,6 @@ button,input {
 }
  
 img {
-  margin-left: 1rem;
   display: block;
   max-width: 100%;
   height: auto;
@@ -217,8 +216,11 @@ element.style {
     height: 30rem;
     border-radius: 1rem;
   }
+  .iconbar{
+    width: 10rem;
+  }
   .bar{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     font-family: 'Futura', sans-serif;
     flex-direction: column;
@@ -243,9 +245,9 @@ element.style {
 }
 header {
   display: flex;
-  height: 20rem;
+  height: 8rem;
   padding: 2rem;
-  margin-right: 2rem;
+  margin-right: 4rem;
   align-items: center;
   justify-content: center;
 }
