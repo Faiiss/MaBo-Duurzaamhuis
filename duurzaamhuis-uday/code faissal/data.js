@@ -60,4 +60,3 @@ const config = {
 new Chart(document.getElementsByClassName("js--chart--1"), config);
 
 
-
