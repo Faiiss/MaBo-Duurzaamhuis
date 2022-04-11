@@ -35,7 +35,7 @@ async function renderData() {
          let datum =  new Date(measurement.datum);
 
          // De meting gegevens wegschrijven naar de div
-  dataDiv.innerHTML = `<h3>Datum: ${datum.toLocaleString()}</h3><p>Sensor: ${measurement.sensor}</p>`
+    dataDiv.innerHTML = `<h3>Datum: ${datum.toLocaleString()}</h3> <p> vochtigheid ${measurement.value2} </p> <p> temperatuur ${measurement.value1} </p>`
 
 }
 
