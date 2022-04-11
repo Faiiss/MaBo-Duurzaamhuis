@@ -48,7 +48,7 @@ h2{
   font-size: 6rem;
 }
 h3{
-  font-size: 8rem;
+  font-size: 5rem;
 }
 .energie{
   font-size: 5rem;
@@ -196,7 +196,81 @@ h2#location{
 
   
 }
-.dataDiv{
-  font-size: 30px;
-  height: 30px;
+#dataDiv{
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+
+}
+
+element.style {
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  width: 200px;
+  margin-bottom: 8rem;
+}
+
+@media screen and (max-width: 767px){
+  .card{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+  }
+  .bar{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Futura', sans-serif;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 20rem;
+    border: none;
+    outline: none;
+    border-radius: 5rem;
+  }
+  #Bimg{
+    width: 10rem;
+    height: 10rem;
+  }
+  img {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+header {
+  display: flex;
+  height: 20rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  display: block;
+  font-size: 2rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 3.5rem;
+}
+p{
+  font-size: 2rem;
+}
+.energie {
+  font-size: 2rem;
+}
+element.style {
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  width: 200px;
+}
 }

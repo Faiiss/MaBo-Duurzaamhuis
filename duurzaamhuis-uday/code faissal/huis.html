@@ -20,7 +20,7 @@
             <div class="iconbar"><img src="img/Group 16.png" alt=""></div>
     </header>
     
-    <div id="dataDiv"></div>
+    
 
     <div class="tegels">
         <article class="card cardgasverbruik">
@@ -33,11 +33,11 @@
             <h2>HUIDIGE TEMPERATUUR</h2>
         <div>
         <div class="info-div">
-            <img src="img/Group 22.png" alt="">
+            <img id="Bimg" src="img/Group 22.png" alt="">
             <h3>6℃</h3>
         </div>
         <div class="info-div">
-            <img src="img/Group 19.png" alt="">
+            <img id="Bimg" src="img/Group 19.png" alt="">
             <h3>20℃</h3>
         </div>
         </div>             
@@ -52,7 +52,7 @@
         <article class="card cardenergie">
             <h2 class="energie">VERBRUIK</h2>
             <p class="energiep">AFGELOPEN MAANDEN</p>
-            <canvas class="js--chart--1" width="1000" height="1" style="display: block; box-sizing: border-box; height: 275px; width: 550px; margin-bottom: 8rem;">
+            <canvas class="js--chart--1">
             </canvas>   
         </article> 
         <article class="card weather">
@@ -62,11 +62,10 @@
             <img src="" id="icon">
         </article> 
         <article class="card card--first">
-            <h2 id="date">placeholder Date</h2>
-            <h2 id="time">placeholder Time</h2>
+            <div id="dataDiv"></div>
+            <h2 id="date" id="time"></h2>
+            <h2 id="time"></h2>
         </article>
-        
-        <section class="section--first">
     </div> 
     
 </body>
